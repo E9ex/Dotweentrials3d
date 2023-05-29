@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 170793922}
   - component: {fileID: 170793923}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: obje1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -215,12 +215,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170793917}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 3.24}
+  m_LocalPosition: {x: 0, y: 0, z: -2.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &170793922
 MonoBehaviour:
@@ -245,7 +245,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 170793917}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 309d23a5db2bc4a87aa05a0ddac59ed2, type: 3}
   m_Name: 
@@ -267,7 +267,7 @@ GameObject:
   - component: {fileID: 550924750}
   - component: {fileID: 550924749}
   m_Layer: 0
-  m_Name: punchobject
+  m_Name: obje3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -344,7 +344,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550924748}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 4.36}
+  m_LocalPosition: {x: 0, y: 0, z: 2.24}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -455,6 +455,7 @@ GameObject:
   m_Component:
   - component: {fileID: 892712250}
   - component: {fileID: 892712249}
+  - component: {fileID: 892712251}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -469,7 +470,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892712248}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d610bce30c77240fd9c4b6901044f397, type: 3}
   m_Name: 
@@ -489,8 +490,24 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &892712251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892712248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35777485cffd6400f8b224b082ee6d7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cars:
+  - {fileID: 170793921}
+  - {fileID: 1381081478}
+  - {fileID: 550924752}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -589,7 +606,7 @@ GameObject:
   - component: {fileID: 1381081479}
   - component: {fileID: 1381081480}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: obje2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -658,7 +675,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1381081479
 BoxCollider:
